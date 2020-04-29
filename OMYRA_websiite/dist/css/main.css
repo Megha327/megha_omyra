@@ -1,0 +1,132 @@
+.container {
+  max-width: 1180px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-header {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  transition: all 0.5s;
+  border: #f09e39;
+  border-radius: 50px;
+  cursor: pointer; }
+
+.btn-header {
+  color: #ffff;
+  background-color: #f09e39;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  letter-spacing: .1rem;
+  margin-right: 1rem; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  line-height: 1.6;
+  font-family: sans-serif;
+  background-color: #ffff;
+  color: #333333; }
+
+a {
+  text-decoration: none;
+  color: #333333; }
+
+ul {
+  list-style-type: none; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.section-heding {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 10rem;
+  padding: 0 6rem;
+  margin-top: -6%;
+  color: #f5f5f5;
+  margin-bottom: -5.3%; }
+
+.readmore {
+  position: relative; }
+  .readmore:after {
+    content: "\f000";
+    font-family: fontawesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0; }
+
+header {
+  background: url("../image/heroo.svg") no-repeat center center/cover;
+  height: 125vh;
+  position: relative; }
+  header .main-nav {
+    padding: 2rem 0.5rem;
+    display: flex;
+    justify-content: space-between; }
+    header .main-nav .logo {
+      font-size: 2rem; }
+    header .main-nav .nav-bar {
+      display: flex; }
+      header .main-nav .nav-bar .left-nav {
+        padding-right: 0.5rem 1rem; }
+        header .main-nav .nav-bar .left-nav li {
+          float: left;
+          margin-right: 1rem;
+          padding: 1rem;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #333333; }
+      header .main-nav .nav-bar .right-nav {
+        text-align: right;
+        margin-left: 2rem; }
+        header .main-nav .nav-bar .right-nav li {
+          float: left;
+          padding: 1rem 0.5rem;
+          font-size: 1rem; }
+  header .header-content {
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    color: #ffff; }
+    header .header-content .heading {
+      font-size: 4.3rem;
+      line-height: 4.5rem; }
+    header .header-content .heading-option a:last-child {
+      color: #ffff; }
+
+.section-about {
+  background-color: #ffff; }
+  .section-about .about-flex {
+    display: flex;
+    justify-content: space-between; }
+    .section-about .about-flex .about {
+      padding: 0 6rem 2rem 0; }
+      .section-about .about-flex .about-heading {
+        color: #a5a5a5;
+        margin-bottom: 3rem; }
+      .section-about .about-flex .about-main-hading {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #333333;
+        margin-bottom: 1rem; }
+      .section-about .about-flex .about-para {
+        color: #a5a5a5;
+        font-size: 1.2rem; }
+  .section-about .approachment-flex {
+    display: flex;
+    justify-content: space-between; }
+    .section-about .approachment-flex .approachment-icon {
+      color: #f09e39; }
+    .section-about .approachment-flex-first {
+      padding: .5rem 2.5rem 2rem 0; }
