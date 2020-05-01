@@ -1,0 +1,824 @@
+//for tablets and smaller
+@media(max-width: 768px){
+    .logo{
+        font-size: 6rem;
+    }
+
+    .process-header, .portfolio-header, .work-header{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2rem;
+        
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+    
+    //header
+    header{
+        background: $banner-image no-repeat center center / cover;
+        height: 100vh;
+        position: relative;
+        .container{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .main-nav{
+            background-color: rgba(255,255,255,0.7);
+            width: 100%;
+            height: 94vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            
+            .nav-bar{
+                display: flex;
+                flex-direction: column;
+                .left-nav{
+                    // padding-right:0;
+                    width: 100%;
+                    // padding-left: 0;
+                    // margin-left: 0;
+                    li {
+                        float: none;
+                        margin-right: 0;
+                        padding: 0;
+                        margin-bottom: 2rem;
+                        font-size: 2rem;
+                        font-weight: bold;
+                        color: $dark-color;
+                        transition: all 1s;
+    
+                    }
+                }
+    
+                a:hover{
+                    color: $main-color;
+                }
+    
+            }
+        }
+    
+        .header-content{
+            display: none;
+        }
+    }   
+    
+    //sections
+    .section{
+        
+        //about section
+        &-about{
+            h2{
+                line-height: 4rem;
+                font-size: 5rem;
+                text-align: center;
+            }
+            
+            .about-flex{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+
+                .about{
+                    padding: 0 ;
+                    width: 100%;
+
+                    &-heading{
+                        margin: 3rem 0;
+                        font-size: 3rem;
+                    }
+                    &-main-heading{
+                        font-size: 3rem;
+                        line-height: 4rem;
+                    }
+
+                    &-para{
+                        font-size: 2rem;
+                    }
+                }
+
+                .approachment{
+                    &-flex{
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    &-item{
+                        padding: 0 ;
+                    }
+
+                    &-img{
+                        width: 30%;
+                        height: auto;
+                    }
+                    &-main-hading{
+                        font-size: 2.5rem;
+                    }
+
+                    &-para{
+                        font-size: 2rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }    
+        
+        //section work
+        &-work{
+            h2{
+                line-height: 4.5rem;
+                font-size: 6rem;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .grid-row {
+                flex-direction: column;
+                align-items: center;
+                
+                .col-2{
+                    margin-top: 0;
+                }
+                .column {
+                    flex: 100%;
+                    padding: 0;
+
+                    .col-1-card, .col-2-card, .col-3-card{
+                        img{
+                            width: 50%;
+                            height: auto;
+                        }
+
+                        .card-content{
+                            h3{
+                                font-size: 2.5rem;
+                            }
+                            p{
+                                font-size: 2rem;
+                            }
+
+                            .btn-card{
+                                font-size: 1.5rem;
+                            }
+
+                        }
+                    } 
+                }
+            }         
+        }
+
+        //section bg-image
+        &-bg-image{
+            height: 70vh;
+            .items{
+                flex-direction: column;
+                text-align: center;
+                margin: auto;
+                margin-top: 10%;
+
+                .item-1{
+                    h3{
+                        font-size: 2rem;
+                        line-height: 5rem;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        //section-process
+        &-process{
+            h2{
+                font-size: 6rem;
+                text-align: center;
+                line-height: 5rem;
+                margin-bottom: 1rem;
+            }
+
+            .process{
+                &-items{
+                    .process{
+                        &-item-1, &-item-3, &-item-5, &-item-7{
+                            padding-bottom: 2rem;
+
+                            .item-flex{
+                                display: flex;
+                                flex-direction: column;
+                                text-align: center;
+                                padding: 3rem ;
+                                
+                                .count{
+                                    font-size: 13rem;
+                                }
+
+                                .item-text{
+                                    flex-direction: column;
+                                    align-items: center;
+
+                                    .icon-box{
+                                        padding: 0;
+                                        margin-bottom: 1rem;
+                                        .process-item-img{
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+
+                                    .text-box{
+                                        h3{
+                                            font-size: 2.5rem;
+                                        }
+                                        p{
+                                            font-size: 2rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &-item-2, &-item-4, &-item-6{
+                            padding-top: 2rem;
+                            .item-flex{
+                                flex-direction: column;
+                                padding: 3rem ;
+                                
+                                .item-text{
+                                    flex-direction: column;
+                                    align-items: center;
+
+                                    .icon-box{
+                                        padding:0;
+
+                                        .process-item-img{
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+
+                                    .text-box{
+                                        width: 100%;
+                                        text-align: center;
+                                        h3{
+                                            font-size: 2.5rem;
+                                        }
+                                        p{
+                                            font-size: 2rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }                
+                }
+            }
+        }
+
+        //section portfolio
+        &-portfolio{
+            h2{
+                font-size: 6rem;
+                text-align: center;
+                line-height: 4.7rem;
+                margin-bottom: 1rem;
+            }
+
+            .portfolio-items{
+                margin: 1rem;
+                display: flex;
+                flex-direction: column;
+                .item-img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .more-image{
+                &-btn{
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        
+        //section testimonial
+        &-testimonial{
+            h2{
+                line-height: 4rem;
+                font-size: 5rem;
+                text-align: center;
+            }
+    
+            .testimonial{
+                &-content{
+                    text-align: center;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0 auto;
+                    .icon-img{
+                        width: 150px;
+                        height:  auto;
+                    }
+                    .testimonial-para{
+                        font-size: 2rem;
+                    }
+                    .image-text{
+                        .partner-img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        h3{
+                            font-size: 3rem;
+                        }
+                        p{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+        //section blog
+        &-blog{
+            
+            .news{
+                &-flex{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                &-items{
+                    width: 100%;
+                    
+                    .desc{
+                        &-main{
+                            font-size: 2rem;
+                        }
+                        &-heading{
+                            font-size: 2rem;
+                        }
+
+                        &-content{
+                            font-size: 2rem;
+                        }
+
+                        .more-btn{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                &-img{
+                    height: auto;
+                }
+            }
+
+        }
+
+        //section-partners
+        &-partners{
+            h2{
+                line-height: 3.8rem;
+                font-size: 5rem;
+            }
+            .logo-flex{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                .logo-img{
+                    text-align: center;
+                    width: 80%;
+                    margin: 0 auto;
+                    img{
+                        margin: 2rem 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    //footer
+    footer{
+        padding: 0;
+        .footer-flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            .contact-section{
+                width: 100%;
+                margin-left: 0;
+                h2{
+                    text-align: center;
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+                }
+
+                .contact-inner-section{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    text-align: center;
+            
+                    .inner-content{
+                        border-bottom: 1px solid $light-color;
+                        padding: 0rem 2rem 3rem 2rem;
+                        margin-bottom: 2rem;
+
+                        &:last-child{
+                            border-bottom: none;
+                            margin-bottom: 0;
+                        }
+                        h3{
+                            font-size: 3rem;
+                            margin-bottom: 1rem;
+                        }
+
+                        .text-nav li{
+                            line-height: 4rem;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }        
+        }
+        p{
+            margin: 1.6rem 0;
+            font-size: 1.2rem;
+        }
+
+        .footer-text{
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .left-footer{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                li{
+                    margin-right: 0rem;
+                    font-size: 2rem;
+                }
+            }
+
+            .right-footer{
+                font-size: 2rem;
+            }
+        }
+    }
+} 
+
+//smart phones
+@media (max-width: 580px){
+    
+    .logo{
+        font-size: 5rem;
+    }
+
+    .process-header, .portfolio-header, .work-header{
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    
+    //header
+    header{
+        height: 120vh;
+        .main-nav{
+            height: 120vh;
+        }
+    
+        .header-content{
+            display: none;
+        }
+    }   
+    
+    //sections
+    .section{
+        
+        //about section
+        &-about{
+            
+            .about-flex{
+                .about{
+                    &-main-heading{
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                    }
+
+                    &-para{
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .approachment{
+                    &-main-hading{
+                        font-size: 2rem;
+                    }
+                    &-para{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }    
+        
+        //section work
+        &-work{
+            h2{
+                line-height: 4rem;
+                font-size: 5rem;
+            }
+
+            .grid-row {
+                .column {
+                    .col-1-card, .col-2-card, .col-3-card{
+                        .card-content{
+                            h3{
+                                line-height: 3rem;
+                            }
+                            p{
+                                font-size: 1.5rem;
+                            }
+
+                            .btn-card{
+                                font-size: 1.3rem;
+                            }
+
+                        }
+                    } 
+                }
+            }         
+        }
+
+        //section bg-image
+        &-bg-image{
+            .items{
+                .item-1{
+                    h3{
+                        font-size: 1.9rem;
+                        line-height: 3rem;
+                    }
+                }
+            }
+        }
+
+        //section-process
+        &-process{
+            h2{
+                font-size: 5rem;
+                line-height: 4rem;
+            }
+            .process{
+                &-items{
+                    .process{
+                        &-item-1, &-item-3, &-item-5, &-item-7,
+                        &-item-2, &-item-4, &-item-6{
+                            padding: 3rem 0;
+                            .item-flex{
+                                padding: 0rem ;
+                                
+                                .item-text{
+                                    .text-box{
+                                        p{
+                                            font-size: 1.7rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }                
+                }
+            }
+        }
+
+        //section testimonial
+        &-testimonial{
+            h2{
+                line-height: 3rem;
+                font-size: 4rem;
+                text-align: center;
+            }
+        }
+
+        //section blog
+        &-blog{
+            h2{
+                font-size: 6rem;
+                line-height: 3rem;
+            }
+            .news{
+                &-items{
+                    .desc{
+                        &-heading{
+                            font-size: 1.7rem;
+                        }
+
+                        &-content{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    //footer
+    footer{
+        .footer-flex{
+            .contact-section{
+                h2{
+                    font-size: 1.7rem;
+                }
+
+                .contact-inner-section{
+                    .inner-content{
+                        h3{
+                            font-size: 2.5rem;
+                        }
+                        .text-nav li{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }        
+        }
+        .footer-text{
+            .left-footer{
+                text-align: center;
+                li{
+                    margin-right: 0rem;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .right-footer{
+                font-size: 1.5rem;
+            }
+
+            .up-arrow{
+                border: 1px solid $white-color;
+                margin: 0 0 0 2rem;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: $white-color;
+                transition: all 1s;
+
+                &:hover{
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+//max width 1024  
+@media (min-width: 769px )and (max-width: 10024px){
+    // body{
+    //     background-color: red;
+    // }
+    
+    .process-header, .portfolio-header, .work-header{
+        text-align: center;
+        width: 50%;
+        padding: 0rem 5rem 2rem 5rem;
+        margin: 0 auto;
+    
+        h3{
+            font-size: 2.7rem;
+        }
+        p{
+            color: $medium-color;
+            font-size: 1.2rem;
+        }
+    }
+    .logo{
+        text-align: center;
+    }
+    //header
+    header{
+        .main-nav{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+    
+        }
+    
+        .header-content{
+           .heading{
+                font-size: 4rem;
+            }    
+        }
+    }
+    
+    //sections
+    .section{
+        //about section
+        &-about{ 
+            h2{
+                line-height: 6rem;
+                font-size: 8rem;
+                text-align: center;
+            }
+            
+            .about-flex{
+                .about{
+                    width: 100%;
+                }
+            }
+        }
+    
+        //section work
+        &-work{
+            h2{
+                line-height: 5rem;
+                font-size: 8rem;
+                text-align: center;
+            }
+             
+        }
+    
+        //section-process
+        &-process{
+            h2{
+                font-size: 8rem;
+                text-align: center;
+                line-height: 6rem;
+            }
+        }
+    
+        //section portfolio
+        &-portfolio{
+            h2{
+                font-size: 10rem;
+                text-align: center;
+                padding-left: 6rem;
+                line-height: 7rem;
+            } 
+        }
+    
+        //testimonial section
+        &-testimonial{
+            h2{
+                font-size: 6rem;
+                text-align: center;
+                line-height: 4.5rem;
+            }
+        }
+        
+        //section-partners
+        &-partners{
+            h2{
+                font-size: 8rem;
+                text-align: center;
+                line-height: 6rem;
+            }
+        }
+    }
+    
+    //footer
+    footer{
+        .footer-flex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            .contact-section{
+                margin-left: 0;
+            }        
+        }
+    }    
+    
+}
+//landscape media
+@media (max-height: 580px){
+    
+}
+
+@media (max-height: 320px){
+ }

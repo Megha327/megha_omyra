@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Home | OMYRA Website Design</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="container">
-            <nav class="main-nav" id="home">
+            <nav class="main-nav">
                 <div class="logo">OMYRA </div>
                 <div class="nav-bar">
                     <ul class="left-nav">
@@ -19,13 +20,10 @@
                         <li><a href="#work">Work</a></li>
                         <li><a href="#process">Process</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonial">Testimonial</a></li>
                         <li><a href="#blog">Blog </a></li>
-                        <li><a href="#partners">Partners </a></li>
+                        <li><a href="#partner">Partners </a></li>
                         <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                    <ul class="right-nav">
-                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fas fa-user-circle"></i></a></li>
                     </ul>
                 </div>
             </nav>
@@ -42,32 +40,36 @@
         </div>
     </header>
     <!--Section about-->
-    <section class="section-about">
-        <h2 class="section-heding">who we are</h2>
+    <section class="section-about" id=about>
+        <h2 class="section-heading">who we are</h2>
         <div class="container">
             <div class="about-flex">
                 <div class="about">
                     <h4 class="about-heading">About Us</h4>
-                    <h3 class="about-main-hading">Holistic brand redesign <br>focusing product design</h3>
+                    <h3 class="about-main-heading">Holistic brand redesign <br>focusing product design</h3>
                     <p class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque voluptate libero. Nostrum tempore, cum sapiente veniam 
-                    quidem asperiores! Eum voluptatem quo consectetur perspiciatis sit voluptates, consequuntur assumenda error sequi?
-                    </p>
+                    quidem asperiores! Eum voluptatem quo .
+                 </p>
                 </div>
                 <div class="approachment">
                     <h4  class="about-heading">Our Approachment</h4>
                     <div class="approachment-flex">
-                        <div class="approachment-first">
-                            <i class="fas fa-lightbulb approachment-icon"></i>
-                            <h3>User Centric Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque voluptate libero. Nostrum tempore, cum sapiente veniam 
-                            quidem asperiores!
+                        <div class="approachment-item">
+                            <div class="image-box">
+                                <img src="image/steps/step1.svg" alt="approach image" class="approachment-img">
+                            </div>
+                            <h3 class="approachment-main-hading">User Centric Development</h3>
+                            <p class="approachment-para" >Lorem ipsum dolor sit amet consectetur adipisicing
+                                consequuntur assumenda error sequi? 
                             </p>
                         </div>
-                        <div class="approachment-second">
-                            <i class="fab fa-buffer approachment-icon"></i>
-                            <h3>Redundancy Multi Layering</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque voluptate libero. Nostrum tempore, cum sapiente veniam 
-                            quidem asperiores!
+                        <div class="approachment-item">
+                            <div class="image-box">
+                                <img src="image/steps/step2.svg" alt="approach image" class="approachment-img">
+                            </div>
+                            <h3 class="approachment-main-hading">Redundancy Multi Layering</h3>
+                            <p class="approachment-para">Lorem ipsum dolor sit amet consectetur adipisicing
+                                consequuntur assumenda error sequi?
                             </p>
                         </div>
                     </div>
@@ -75,5 +77,477 @@
             </div>
         </div>
     </section>
+
+    <!---Section work-->
+    <section class="section-work" id="work">
+        <h2 class="section-heading">what we do</h2>
+        <div class="container">
+            <div class="work-header">
+                <h3>Unique web design solutions</h3>
+                <p>Omyra Studio is a full-service, intreactive agency offering 
+                    innovatiive web design & branding solutions which move the 
+                    boundaries. Our sophisticated approach to the Development
+                    of digital experiences exceeds all expectations.
+                </p>
+            </div>
+
+            <div class="grid-row"> 
+                <div class="column col-1">
+                  <div class="col-1-card card-1">
+                      <img src="image/icons/icon1.svg" alt="crad image">
+                      <div class="card-content">
+                          <h3>Corporate web development</h3>
+                          <p>Dummy text is text that is used in the publishing industry or by
+                             web designers to occupy the space which will later be filled with
+                             'real' content.
+                          </p>
+                          <a href="#" class="btn-card">LET'S TALK</a>
+                      </div>
+                  </div>
+
+                  <div class="col-1-card card-2">
+                     <img src="image/icons/icon3.svg" alt="crad image">
+                        <div class="card-content">
+                            <h3>Web hosting & management</h3>
+                            <p>Dummy text is text that is used in the publishing industry or by
+                            web designers to occupy the space which will later be filled with
+                                'real' content.
+                            </p>
+                            <a href="#" class="btn-card">LET'S TALK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-2">
+                    <div class="col-2-card card-1">
+                        <img src="image/icons/icon6.svg" alt="crad image">
+                        <div class="card-content">
+                            <h3>UI/UX Services</h3>
+                            <p>Dummy text is text that is used in the publishing industry or by
+                               web designers to occupy the space which will later be filled with
+                               'real' content.
+                            </p>
+                            <a href="#" class="btn-card">LET'S TALK</a>
+                        </div>
+                    </div>
+  
+                    <div class="col-2-card card-2">
+                       <img src="image/icons/icon4.svg" alt="crad image">
+                          <div class="card-content">
+                              <h3>Digital Marketing</h3>
+                              <p>Dummy text is text that is used in the publishing industry or by
+                              web designers to occupy the space which will later be filled with
+                                  'real' content.
+                              </p>
+                              <a href="#" class="btn-card">LET'S TALK</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="column col-3">
+                    <div class="col-3-card card-1">
+                        <img src="image/icons/icon2.svg" alt="crad image">
+                        <div class="card-content">
+                            <h3>Branding</h3>
+                            <p>Dummy text is text that is used in the publishing industry or by
+                               web designers to occupy the space which will later be filled with
+                               'real' content.
+                            </p>
+                            <a href="#" class="btn-card">LET'S TALK</a>
+                        </div>
+                    </div>
+  
+                    <div class="col-3-card card-2">
+                       <img src="image/icons/icon5.svg" alt="crad image">
+                          <div class="card-content">
+                              <h3>Web Application</h3>
+                              <p>Dummy text is text that is used in the publishing industry or by
+                              web designers to occupy the space which will later be filled with
+                                  'real' content.
+                              </p>
+                              <a href="#" class="btn-card">LET'S TALK</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+    <!--Section bg-section-->
+    <section class="section-bg-image">
+        <div class="container">
+            <div class="items">
+                <div class="item-1">
+                    <h3>Are you ready to improve your online <br>business presence today</h3>
+                    <p>Aenean lacinia bibendum nulla sed consectour fusce dapibus</p>
+                </div>
+                <div class="item-2"></div>
+            </div>
+        </div>
+    </section>
+    <!--section -process--->
+    <section class="section-process" id="process">
+        <h2 class="section-heading">our process</h2>
+        <div class="container">
+            <div class="process-header">
+                <h3>Creative Process</h3>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. 
+                    Aenean lacinia bibendum nulla sed consectetur Donec ullamcorper
+                    nulla non metus auctor fringilla
+                </p>
+            </div>
+        </div>
+        <div class="process-items">
+            <div class="process-item-1">
+                <div class="container">
+                    <div class="item-flex">
+                        <div class="count">01</div>
+                        <div class="item-text">
+                            <div class="icon-box">
+                                <img src="image/steps/step1.svg" alt="process image" class="process-item-img">
+                            </div>
+                            <div class="text-box">
+                                <h3>Project Definition</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                    elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis,  Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-item-2">
+                <div class="container">
+                    <div class="item-flex">
+                        <div class="item-text">
+                            <div class="text-box">
+                                <h3>Wireframes and Site Architecture</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                    elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis,  Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis
+                                </p>
+                            </div>
+                            <div class="icon-box">
+                                <img src="image/steps/step2.svg" alt="process image" class="process-item-img">
+                            </div>
+                        </div>
+                        <div class="count">02</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-item-3">
+                <div class="container">
+                    <div class="item-flex">
+                        <div class="count">03</div>
+                        <div class="item-text">
+                            <div class="icon-box">
+                                <img src="image/steps/step3.svg" alt="process image" class="process-item-img">
+                            </div>
+                            <div class="text-box">
+                                <h3>Visual Design</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                    elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis,  Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-item-4">
+                <div class="container">
+                    <div class="item-flex">
+                        <div class="item-text">
+                            <div class="text-box">
+                                <h3>Site Development</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                    elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis,  Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis
+                                </p>
+                            </div>
+                            <div class="icon-box">
+                                <img src="image/steps/step4.svg" alt="process image" class="process-item-img">
+                            </div>
+                        </div>
+                        <div class="count">04</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-item-5">
+                <div class="container">
+                    <div class="item-flex">
+                        <div class="count">05</div>
+                        <div class="item-text">
+                            <div class="icon-box">
+                                <img src="image/steps/step5.svg" alt="process image" class="process-item-img">
+                            </div>
+                            <div class="text-box">
+                                <h3>Site Testing</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                    elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis,  Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-item-6">
+                <div class="container">
+                    <div class="item-flex">
+                        <div class="item-text">
+                            <div class="text-box">
+                                <h3>Launch</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                    elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis,  Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis
+                                </p>
+                            </div>
+                            <div class="icon-box">
+                                <img src="image/steps/step6.svg" alt="process image" class="process-item-img">
+                            </div>
+                        </div>
+                        <div class="count">06</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-item-7">
+                <div class="container">
+                    <div class="item-flex">
+                        <div class="count">07</div>
+                        <div class="item-text">
+                            <div class="icon-box">
+                                <img src="image/steps/step7.svg" alt="process image" class="process-item-img">
+                            </div>
+                            <div class="text-box">
+                                <h3>Site Maintenance</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                    elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis,  Aenean massa. 
+                                    Cum sociis natoque penatibus et magnis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section portfolio-->
+    <section class="section-portfolio" id="portfolio">
+        <h2 class="section-heading">our work</h2>
+        <div class="container">
+            <div class="portfolio-header">
+                <h3>Portfolio</h3>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. 
+                    Aenean lacinia bibendum nulla sed consectetur Donec ullamcorper
+                    nulla non metus auctor fringilla
+                </p>
+            </div>
+        </div>
+        <div class="portfolio-items">
+            <div class="item-img">
+                <img src="image/portfolio/w1.jpg" alt="portfolio image">
+            </div>
+            <div class="item-img">
+                <img src="image/portfolio/w2.jpg" alt="portfolio image">
+            </div>
+            <div class="item-img">
+                <img src="image/portfolio/w3.jpg" alt="portfolio image">
+            </div>
+            <div class="item-img">
+                <img src="image/portfolio/w4.jpg" alt="portfolio image">
+            </div>
+            <div class="item-img">
+                <img src="image/portfolio/w5.jpg" alt="portfolio image">
+            </div>
+            <div class="item-img">
+                <img src="image/portfolio/w6.jpg" alt="portfolio image">
+            </div>
+        </div>
+        <div class="more-image">
+            <a class="more-image-btn">See All Works <i class="fa fa-angle-right "></i></a>
+        </div>
+    </section>
+    <!--Section Testimonial-->
+    <section class="section-testimonial" id="testimonial">
+        <h2 class="section-heading" >testimonial</h2>
+        <div class="container">
+            <div class="testimonial-content">
+                <img src="image/testimonial/o-logo.png" alt="logo image" class="icon-img">
+                <p class="testimonial-para">We are a solution partner with the Omyra Studio Team.
+                    I would definitely recommend if you are looking for a long-term partner.
+                    The finish the work on time, and we are happy with their support. Cheers...! 
+                </p>
+                <div class="image-text">
+                    <img src="image/testimonial/profile.png" alt="profile image" class="partner-img">
+                    <h3>Miyagi Turbo</h3>
+                    <p>Djavaweb.Counsler</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section Blog-->
+    <section class="section-blog" id="blog">
+        <h2 class="section-heading">Blog</h2>
+        <div class="container">
+            <h3 class="blog-heading">Latest News</h3>
+            <div class="news-flex">
+                <div class="news-items">
+                    <a target="_blank" href="image/blog/n1.jpeg">
+                      <img src="image/blog/n1.jpeg" alt="news image" class="news-img">
+                    </a>
+                    <div class="desc">
+                        <p class="desc-main">design <span class="slash">/</span> technology</p>
+                        <h3 class="desc-heading">The Peeping Tom effect makes us worry 
+                            about the wrong threates to our privacy
+                        </h3>
+                        <p class="desc-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy
+                        </p>
+                        <a href="#" class="more-btn">Read more <i class="fa fa-angle-right "></i></a>
+                    </div>
+                </div>
+
+                <div class="news-items">
+                    <a target="_blank" href="image/blog/n2.jpg">
+                      <img src="image/blog/n2.jpg" alt="news image" class="news-img">
+                    </a>
+                    <div class="desc">
+                        <p class="desc-main">design <span class="slash">/</span> technology</p>
+                        <h3 class="desc-heading">The Peeping Tom effect makes us worry 
+                            about the wrong threates to our privacy
+                        </h3>
+                        <p class="desc-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy
+                        </p>
+                        <a href="#" class="more-btn">Read more <i class="fa fa-angle-right "></i></a>
+                    </div>
+                </div>
+
+                <div class="news-items">
+                    <a target="_blank" href="image/blog/n3.jpg">
+                      <img src="image/blog/n3.jpg" alt="news image"  class="news-img">
+                    </a>
+                    <div class="desc">
+                        <p class="desc-main">design <span class="slash">/</span> technology</p>
+                        <h3 class="desc-heading">The Peeping Tom effect makes us worry 
+                            about the wrong threates to our privacy
+                        </h3>
+                        <p class="desc-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy
+                        </p>
+                        <a href="#" class="more-btn">Read more <i class="fa fa-angle-right "></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section partners-->
+    <section class="section-partners" id="partner">
+        <h2 class="section-heading">partners</h2>
+        <div class="container">
+            <div class="logo-flex">
+                <div class="logo-img">
+                    <img src="image/logos/angary.png" alt="logo image">
+                </div>
+                <div class="logo-img">
+                    <img src="image/logos/apper.png" alt="logo image">
+                </div>
+                <div class="logo-img">
+                    <img src="image/logos/avi.png" alt="logo image">
+                </div>
+                <div class="logo-img">
+                    <img src="image/logos/d&d.png" alt="logo image">
+                </div>
+                <div class="logo-img">
+                    <img src="image/logos/del.png" alt="logo image">
+                </div>
+                <div class="logo-img">
+                    <img src="image/logos/ember.png" alt="logo image">
+                </div>
+                <div class="logo-img">
+                    <img src="image/logos/hips.png" alt="logo image">
+                </div>
+                <div class="logo-img">
+                    <img src="image/logos/hoo.png" alt="logo image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer-->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-flex">
+                <div class="logo">OMYRA</div>
+                <div class="contact-section">
+                    <h2>Lets's build something great together</h2>
+                    <div class="contact-inner-section">
+                        <div class="inner-content office ">
+                            <h3>office</h3>
+                            <ul class="text-nav">
+                                <li>Virginia --</li>
+                                <li>1428 Callison Lane</li>
+                                <li>Building 201</li>
+                                <li>Virginia, VA 22902</li>
+                            </ul>
+                        </div>
+
+                        <div class="inner-content talk ">
+                            <h3>Let's talk</h3>
+                            <ul class="text-nav">
+                                <li>halo@omyra.com</li>
+                                <li>+62 989-554-1979</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="inner-content company ">
+                            <h3>Company</h3>
+                            <ul class="text-nav">
+                                <li>About</li>
+                                <li>Services</li>
+                                <li>Our work</li>
+                                <li>Career</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="inner-content connect ">
+                            <h3>Let's connect</h3>
+                            <ul class="text-nav">
+                                <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                                <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>.LOVE THE HUSTLE</p>
+            <hr>
+            <div class="footer-text">
+                <ul class="left-footer">
+                    <li>&copy;2019 omyra. All rights reserved.</li>
+                    <li>Privacy Policy</li>
+                    <li>Term of Service</li>
+                </ul>
+                <div class="right-footer">
+                    Made in India <a href="#home"><i class="fas fa-chevron-up up-arrow"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
