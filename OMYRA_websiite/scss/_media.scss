@@ -4,7 +4,7 @@
         font-size: 4rem;
     }
 
-    .process-header, .portfolio-header, .work-header{
+    %header-shared-responsive-768{
         width: 100%;
         padding: 0;
         margin-bottom: 2rem;
@@ -16,6 +16,7 @@
             font-size: 2rem;
         }
     }
+    
     
     //header
     header{
@@ -135,12 +136,16 @@
         
         //section work
         &-work{
-            h2{
-                line-height: 4.5rem;
-                font-size: 6rem;
-                text-align: center;
-                margin-bottom: 1rem;
-            }
+                h2{
+                    line-height: 4.5rem;
+                    font-size: 6rem;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+
+                .work-header{
+                    @extend %header-shared-responsive-768;
+                }
 
             .grid-row {
                 flex-direction: column;
@@ -208,6 +213,9 @@
             }
 
             .process{
+                &-header{
+                    @extend %header-shared-responsive-768;
+                }
                 &-items{
                     .process{
                         &-item-1, &-item-3, &-item-5, &-item-7{
@@ -293,7 +301,9 @@
                 line-height: 4.7rem;
                 margin-bottom: 1rem;
             }
-
+            .portfolio-hedare{
+                @extend %header-shared-responsive-768;
+            }
             .portfolio-items{
                 margin: 1rem;
                 display: flex;
@@ -396,7 +406,8 @@
 
                 .logo-img{
                     text-align: center;
-                    width: 80%;
+                    // width: 80%;
+                    width: 30%;
                     margin: 0 auto;
                     img{
                         margin: 2rem 2.5rem;
@@ -489,8 +500,7 @@
     .logo{
         font-size: 3rem;
     }
-
-    .process-header, .portfolio-header, .work-header{
+    %header-shared-responsive-580{
         h3{
             font-size: 2rem;
         }
@@ -539,7 +549,9 @@
                 line-height: 4rem;
                 font-size: 5rem;
             }
-
+            .work-header{
+                @extend %header-shared-responsive-580;
+            }
             .grid-row {
                 .column {
                     .col-1-card, .col-2-card, .col-3-card{
@@ -580,6 +592,9 @@
                 line-height: 4rem;
             }
             .process{
+                &-header{
+                    @extend %header-shared-responsive-580;
+                }
                 &-items{
                     .process{
                         &-item-1, &-item-3, &-item-5, &-item-7,
@@ -607,6 +622,9 @@
         }
         //portfolio
         &-portfolio{
+            .portfolio-header{
+                @extend %header-shared-responsive-580;
+            }
             .more-image-btn{
                 font-size: 1rem;
             }   
@@ -724,13 +742,234 @@
     }
 }
 
-//max width 1024  
-@media (min-width: 769px )and (max-width: 10024px){
-    // body{
-    //     background-color: red;
-    // }
+//very small screens
+@media (max-width: 380px){
+   
+    .logo{
+        font-size: 2.3rem;
+    }
+
+    %header-shared-responsive-380{
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
     
-    .process-header, .portfolio-header, .work-header{
+    //header
+    header{
+        height: 100vh;
+    }   
+    
+    //sections
+    .section{
+        
+        //about section
+        &-about{
+            
+            .about-flex{
+                .about-heading{
+                    font-size: 2rem;
+                }
+                .about{
+                    &-main-heading{
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }    
+        
+        //section work
+        &-work{
+            h2{
+                line-height: 3rem;
+                font-size: 4rem;
+            }
+            .work-header{
+                @extend %header-shared-responsive-380;
+            }
+            .grid-row {
+                .column {
+                    .col-1-card, .col-2-card, .col-3-card{
+                        padding: 1rem;
+                        .card-content{
+                            h3{
+                                line-height: 1.5rem;
+                                line-height: 3rem;
+                            }
+
+                            .btn-card{
+                                font-size: 1rem;
+                            }
+
+                        }
+                    } 
+                }
+            }         
+        }
+
+        //section bg-image
+        &-bg-image{
+            .items{
+                .item-1{
+                    h3{
+                        
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1.5rem;
+                    }
+                }
+                .item-2{
+                    display: none;
+                }
+            }
+        }
+
+        //section-process
+        &-process{
+            h2{
+                font-size: 2.5rem;
+                text-align: center;
+                line-height: 2.5rem;
+            }
+            .process{
+                &-header{
+                    @extend %header-shared-responsive-380;
+                }
+                &-items{
+                    .process{
+                        &-item-1, &-item-3, &-item-5, &-item-7,
+                        &-item-2, &-item-4, &-item-6{
+                            padding: 3rem 0;
+                            .item-flex{
+                                padding: 0rem ;
+                                
+                                .item-text{
+                                    .text-box{
+                                        h3{
+                                            font-size: 1.5rem;
+                                           
+                                        }
+                                        p{
+                                        font-size: 1rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }                
+                }
+            }
+        }
+        //portfolio
+        &-portfolio{
+            .portfolio-header{
+                @extend %header-shared-responsive-380;
+            }
+            h2{
+                text-align: center;
+                font-size: 3rem;
+                padding-left: 0;
+                line-height: 2rem;
+            }
+        }
+        //section testimonial
+        &-testimonial{
+            h2{
+                font-size: 3rem;
+            }
+        }
+
+        //section blog
+        &-blog{
+            h2{
+                font-size: 6rem;
+                line-height: 3rem;
+            }
+            .news{
+                &-items{
+                    .desc{
+                        &-main{
+                            font-size: 1rem;
+                        }
+                        &-heading{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+        }
+
+         //section-partners
+         &-partners{
+            h2{
+                line-height: 3rem;
+                font-size: 4rem;
+                text-align: center;
+            }
+            .logo-flex{
+                .logo-img{
+                    width: 70%;
+                }
+            }
+        }
+    }
+    
+    //footer
+    footer{
+        .footer-flex{
+            .contact-section{
+                h2{
+                    font-size: 1.5rem;
+                }
+
+                .contact-inner-section{
+                    .inner-content{
+                        h3{
+                            font-size: 2rem;
+                        }
+                        .text-nav li{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }        
+        }
+        p{
+            font-size: .8rem;
+        }
+        .footer-text{
+            .left-footer{
+                text-align: center;
+                li{
+                    margin-right: 0rem;
+                    font-size: 1rem;
+                }
+            }
+
+            .right-footer{
+                font-size: 1rem;
+            }
+
+            .up-arrow{
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+
+//max width 1024  
+@media (min-width: 769px )and (max-width: 1024px){  
+    
+    %header-shared-responsive-1024{
         text-align: center;
         width: 50%;
         padding: 0rem 5rem 2rem 5rem;
@@ -744,6 +983,7 @@
             font-size: 1.2rem;
         }
     }
+    
     .logo{
         text-align: center;
     }
@@ -790,7 +1030,9 @@
                 font-size: 8rem;
                 text-align: center;
             }
-             
+            .work-header{
+                @extend %header-shared-responsive-1024;
+            } 
         }
     
         //section-process
@@ -799,6 +1041,9 @@
                 font-size: 8rem;
                 text-align: center;
                 line-height: 6rem;
+            }
+            .process-header{
+                @extend %header-shared-responsive-1024;
             }
         }
     
@@ -810,6 +1055,9 @@
                 padding-left: 6rem;
                 line-height: 7rem;
             } 
+            .portfolio-header{
+                @extend %header-shared-responsive-1024;
+            }
         }
     
         //testimonial section
@@ -847,10 +1095,3 @@
     }    
     
 }
-//landscape media
-@media (max-height: 580px){
-    
-}
-
-@media (max-height: 320px){
- }

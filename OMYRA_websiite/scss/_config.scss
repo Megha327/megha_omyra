@@ -10,15 +10,6 @@ $banner-image:url('../image/heroo.svg');
 $bg-image:url('../image/memphis-bg2.svg');
 $fa-font-path: "../webfonts";
 
-//set color function
-@function set-color($color){
-    @if(lightness($color) > 50){
-        @return $dark-color;
-    }@else{
-        @return $medium-color;
-    }
-}
-
 //set section-heading
 @function set-section-heading($color){
     @if($color == $light-color){
